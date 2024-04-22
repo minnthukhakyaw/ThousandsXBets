@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Display</title>
+</head>
+<body>
+
+
+<div id="userInputDisplay">
+    
+</div>
+
+
+<div class="container" id="container">
+    <div class="form-container sign-up">
+        <form id="signUpForm" action="javascript:void(0);">
+            <h1>Create Account</h1>
+            <span>Use Your Email & Phone number for Registration</span>
+            <input id="emailSignUp" type="email" placeholder="Email">
+            <input id="phoneSignUp" type="number" placeholder="Ph no.">
+            <input id="passwordSignUp" type="password" placeholder="Password">
+            <button type="button" onclick="showSignUpInput()">Sign Up</button>
+        </form>
+    </div>
+
+    <div class="form-container sign-in">
+        <form id="signInForm" action="javascript:void(0);">
+            <h1>Sign In</h1>
+            <span>Use Your Email/ ID Password</span>
+            <input id="emailSignIn" type="email" placeholder="Email">
+            <input id="passwordSignIn" type="password" placeholder="Password">
+            <a href="#">Forget Your Password?</a>
+            <button type="button" onclick="showSignInInput()">Sign In</button>
+        </form>
+    </div>
+</div>
+
+<!-- JavaScript Code -->
+<script>
+    function showSignUpInput() {
+        const email = document.getElementById('emailSignUp').value;
+        const phone = document.getElementById('phoneSignUp').value;
+        const password = document.getElementById('passwordSignUp').value;
+
+        displayUserInput("Sign Up", email, phone, password);
+    }
+
+    function showSignInInput() {
+        const email = document.getElementById('emailSignIn').value;
+        const password = document.getElementById('passwordSignIn').value;
+
+        displayUserInput("Sign In", email, null, password);
+    }
+
+    function displayUserInput(formType, email, phone, password) {
+        let userInputDisplay = document.getElementById('userInputDisplay');
+        userInputDisplay.innerHTML = `<h2>${formType} Input</h2>`;
+        userInputDisplay.innerHTML += `<p>Email: ${email}</p>`;
+        if (phone) {
+            userInputDisplay.innerHTML += `<p>Phone: ${phone}</p>`;
+        }
+        userInputDisplay.innerHTML += `<p>Password: ${password}</p>`;
+    }
+</script>
+
+</body>
+</html>

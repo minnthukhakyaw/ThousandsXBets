@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thousands x Bets - Online Betting</title>
+<style>
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* min-height: 100vh;  */
+  /* position: relative; */
+}
+
+.content {
+    min-height: 100%;
+    margin-bottom: -50px; 
+    padding-bottom: 50px; 
+  }
+
+/*footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #512da8;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}*/
+
+
+footer {
+  color: #fff;
+  background-color: #512da8;
+  padding: 20px;
+  text-align: center;
+  /*margin-top: auto;*/ 
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footermenu {
+  padding: 15px;
+}
+
+
+
+.top-menu {
+  background-color: #512da8;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu li {
+  width: fit-content;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #512da8;
+  padding: 10px;
+  color: #fff;
+}
+
+.logo{
+  flex: 1;
+}
+
+.search-box {
+  /* display: flex; */
+  align-items: center;
+  margin-right: 0;
+  padding: 10px;
+  margin-left: 10px;
+  width: fit-content;
+}
+
+.search-box input[type="text"] {
+  padding: 8px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-box button {
+  padding: 8px 16px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.bottom-menu {
+  height: 9vh;
+  background-color: #512da8;
+  color: #fff;
+  padding: 10px;
+}
+
+.bottom-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom-menu li {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.bottom-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.history {
+  color: #fff;
+  padding: 10px;
+}
+
+.history ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.history li {
+  display: inline;
+}
+
+.history a {
+  text-decoration: none;
+  color: #000;
+  /* font-size: 12px; */
+  font-weight: 1000;
+}
+
+
+a {
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.photo-grid {
+  height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  opacity: 0; 
+  animation: fadeIn 1s forwards; 
+}
+.photo-grid a {
+  color: black; 
+}
+
+
+.photo-grid img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+footer {
+  color: #fff;
+  background-color: #512da8;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+hr {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footermenu {
+  padding: 15px;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="content">
+
+<nav class="top-menu">
+    <ul>
+        <li><a class="headmenu"  href="home.html">Home</a></li>
+        <li><a class="headmenu"  href="region.html">Region</a></li>
+        <li><a class="headmenu"  href="https://m.aiscore.com/">Live Results</a></li>
+        <li><a class="headmenu"  href="Account">My Account</a></li>
+        <li><a class="headmenu"  href="sign_in.html">Sign In</a></li>
+        <li><a class="headmenu"  href="Language">Language</a></li>
+        <li><a class="headmenu"  href="faqss.html">FAQ</a></li>
+      </ul>
+</nav><hr>
+
+<header>
+  <div class="logo">
+    <h1>Thousands x Bets</h1>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Search for bets...">
+    <button type="submit">Search</button>
+  </div>
+</header><hr>
+
+<nav class="bottom-menu">
+    <ul>
+        <li><a href="football.html">Football Betting</a></li>
+        <li><a href="basketball.html">Basketball Betting</a></li>
+      
+        <li><a href="esport.html">Esports Betting</a></li>
+        <li><a href="moresport.html">More Sports Betting</a></li>
+      </ul>
+</nav><hr>
+<nav class="history">
+  <ul>
+    <li><a href="home.html">Home/</a></li>
+    <li><a href="football.html">Football Betting/</a></li>
+ 
+  </ul>
+</nav>
+
+<main>
+  <div class="photo-grid">
+
+    <a href="https://www.oddschecker.com/football">Check Odds Here!</a>
+    <a href="https://int.soccerway.com">Check Teams Infomation Here!</a>
+    <a href="popularteam.html">Visit Popular Football Clubs!</a>
+   </div>
+</main>
+</div>
+
+<footer>
+  @Thousands x Bets. ALL RIGHTS RESERVED.<br><br><br>
+  <a class="footermenu" href="About us">About us</a>
+  <a class="footermenu" href="Terms & Policies">Terms & Policies</a>
+</footer>
+</body>
+</html>
